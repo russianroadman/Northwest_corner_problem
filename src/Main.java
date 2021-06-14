@@ -1,10 +1,11 @@
 public class Main {
 
     private static final int[][] t = {
-            {0,   60,  40,  36,  14,  50},
-            {92,  0,   0,   0,   0,   0},
-            {45,  0,   0,   0,  0,   0},
-            {63,  0,  0,   0,   0,   0}
+            {0,   28,  35,  32,  36,  15},
+            {25,  0,   0,   0,   0,   0},
+            {34,  0,   0,   0,  0,   0},
+            {42,  0,  0,   0,   0,   0},
+            {45,  0,  0,   0,   0,   0}
     };
 
     public static void main(String[] args) {
@@ -67,9 +68,9 @@ public class Main {
     }
 
     public static void print(){
-        for (int i = 0; i < t.length; i++){
-            for (int j = 0; j < t[0].length; j++){
-                System.out.printf("%5d ", t[i][j]);
+        for (int[] ints : t) {
+            for (int j = 0; j < t[0].length; j++) {
+                System.out.printf("%5d ", ints[j]);
             }
             System.out.println();
         }
